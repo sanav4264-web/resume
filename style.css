@@ -2,121 +2,214 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #ffffff;
-  color: #1e293b;
+  color: #222222;
   line-height: 1.6;
-  font-size: 16px
+  font-size: 16px;
 }
 
 h1, h2, h3 {
   font-family: Arial, sans-serif;
   margin-top: 0;
-  color: #1e293b
+  color: #003366;
 }
 
-h1 { font-size: 36px; margin-bottom: 8px }
+h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
 
 h2 {
   font-size: 24px;
   margin-top: 44px;
   margin-bottom: 18px;
   padding-bottom: 8px;
-  border-bottom: 1px solid #cbd5e1
+  border-bottom: 2px solid #003366;
 }
 
-h3 { font-size: 18px; margin-bottom: 6px }
+h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: #222222;
+}
 
-p { margin-top: 0; margin-bottom: 12px }
-ul { padding-left: 20px; margin-top: 8px; margin-bottom: 12px }
-li { margin-bottom: 6px }
-a { color: #1e40af; text-decoration: none }
-a:hover { text-decoration: underline }
+p {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
 
-.bold-text { font-weight: bold }
-.container { width: 85%; margin: 0 auto }
+ul {
+  padding-left: 20px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
 
-#navbar {
+li {
+  margin-bottom: 6px;
+}
+
+a {
+  color: #003366;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.page-box {
+  width: 85%;
+  margin: 0 auto;
+}
+
+nav {
   position: sticky;
   top: 0;
   background-color: #ffffff;
-  border-bottom: 1px solid #cbd5e1;
-  padding: 12px 0
+  border-bottom: 1px solid #cccccc;
+  padding: 12px 0;
 }
 
-.brand {
+nav a {
   display: inline-block;
-  font-weight: bold;
-  font-size: 18px;
-  color: #1e293b;
-  margin-right: 24px;
-  padding: 6px 0
-}
-
-.nav-link {
-  display: inline-block;
-  color: #1e293b;
+  color: #222222;
   padding: 6px 12px;
   margin-right: 4px;
-  border-radius: 4px
+  border-radius: 4px;
 }
-.nav-link:hover { background-color: #f8fafc; color: #1e40af; text-decoration: none }
-.nav-link:active { background-color: #cbd5e1 }
 
-#hero { padding-top: 40px; padding-bottom: 12px }
-.lead { font-size: 18px; margin-bottom: 8px }
-.meta { color: #475569; font-size: 15px; margin-bottom: 14px }
+nav a:hover {
+  background-color: #f4f6f9;
+  color: #003366;
+  text-decoration: none;
+}
 
-.btn {
+nav a:active {
+  background-color: #cccccc;
+}
+
+.site-name {
+  font-weight: bold;
+  font-size: 18px;
+  color: #003366;
+  margin-right: 24px;
+  padding-left: 0;
+}
+
+#top {
+  padding-top: 40px;
+  padding-bottom: 12px;
+}
+.profile-pic {
+  display: inline-block;
+  vertical-align: middle;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 2px solid #003366;
+  margin-right: 24px;
+}
+
+.intro-text {
+  display: inline-block;
+  vertical-align: middle;
+  width: 75%;
+}
+
+.subtitle {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.small-text {
+  color: #555555;
+  font-size: 15px;
+  margin-bottom: 14px;
+}
+
+.button {
   display: inline-block;
   padding: 10px 16px;
   margin-right: 10px;
   margin-top: 8px;
-  background-color: #1e40af;
+  background-color: #003366;
   color: #ffffff;
-  border: 1px solid #1e40af;
+  border: 1px solid #003366;
   border-radius: 4px;
-  font-weight: bold
+  font-weight: bold;
 }
-.btn:hover { background-color: #1e293b; border-color: #1e293b; text-decoration: none }
-.btn:active { background-color: #0f172a }
 
-.btn-outline { background-color: #ffffff; color: #1e40af }
-.btn-outline:hover { background-color: #f8fafc; color: #1e40af }
+.button:hover {
+  background-color: #001f3f;
+  border-color: #001f3f;
+  text-decoration: none;
+}
 
-.card {
-  background-color: #f8fafc;
-  border: 1px solid #cbd5e1;
+.button:active {
+  background-color: #000000;
+}
+
+.white-button {
+  background-color: #ffffff;
+  color: #003366;
+}
+
+.white-button:hover {
+  background-color: #f4f6f9;
+  color: #003366;
+}
+
+.box {
+  background-color: #f4f6f9;
+  border: 1px solid #cccccc;
   border-radius: 6px;
   padding: 20px;
-  margin-bottom: 20px
+  margin-bottom: 20px;
 }
 
-.project-card {
+.project-box {
   display: inline-block;
   width: 41%;
   vertical-align: top;
-  margin-right: 16px
+  margin-right: 16px;
 }
 
 #resume {
   background-color: #ffffff;
-  border: 1px solid #cbd5e1;
+  border: 1px solid #cccccc;
   padding: 28px;
-  margin-top: 16px
+  margin-top: 16px;
 }
-.resume-header { border-bottom: 1px solid #cbd5e1; padding-bottom: 10px; margin-bottom: 14px }
-.resume-name { font-size: 22px; margin-bottom: 4px }
-.resume-section-title {
+
+.resume-top {
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 10px;
+  margin-bottom: 14px;
+}
+
+.resume-title {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.resume-heading {
   font-size: 15px;
   margin-bottom: 8px;
   padding-bottom: 4px;
-  border-bottom: 1px solid #cbd5e1
+  border-bottom: 1px solid #cccccc;
 }
-.resume-group { margin-top: 18px }
+
+.resume-block {
+  margin-top: 18px;
+}
 
 footer {
   margin-top: 48px;
   padding: 24px 0;
-  border-top: 1px solid #cbd5e1;
+  border-top: 1px solid #cccccc;
   text-align: center;
-  color: #475569
+  color: #555555;
 }
